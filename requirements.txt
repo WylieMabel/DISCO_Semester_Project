@@ -1,0 +1,8 @@
+## requirements for project ##
+numpy
+pandas
+matplotlib
+transformers
+torch
+torchvision
+accelerate
