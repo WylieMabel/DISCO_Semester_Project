@@ -1,0 +1,30 @@
+{
+  "Q1": {
+    "arguments": {
+      "0": "Opinion Score: 5\nMeaning: 5 - do not oppose or favor\nIn other words: you are NEUTRAL on this policy",
+      "1": "\"The current system of democracy in the US is poorly functioning, and it is not in the best interest of the country to continue it. The system has become corrupt, with politicians using their positions to enrich themselves and their supporters. The electoral process is rigged, with voters being manipulated by corporations and special interests. The Supreme Court has become an instrument of political power, rather than a check on government abuses. The US needs a new democratic system that is fair, transparent, and accountable to the people. This can be achieved by implementing a direct election system, where voters directly elect representatives to the House of Representatives and the Senate. This would ensure that the",
+      "2": "I believe that the current system of democracy in the US is poorly functioning because of the following reasons:",
+      "3": "I oppose the current system of democracy in the US because it is inefficient, unfair, and corrupt. The US has a long history of democratic failures, and the current system is no exception. The US has a long history of gerrymandering, voter suppression, and electoral fraud. The result is that the majority of Americans do not have a say in the political process. The US has a weak democratic system because it is heavily influenced by money and special interests. The political system is corrupt because it is too easy for wealthy donors to influence elections. The US has a weak democracy because it does not prioritize the interests of the majority of its"
+    },
+    "rankings": {
+      "0": 8,
+      "1": 7,
+      "2": 7,
+      "3": 6
+    }
+  },
+  "Q2A": {
+    "arguments": {
+      "0": "[Your argument goes here]",
+      "1": "As a Republican, I strongly oppose the idea of resettling refugees in the US. The policy is not only cruel, but it also violates our nation's values and principles. We should not be accepting foreigners who are seeking refuge from persecution. Instead, we should focus on providing support and resources to those who have been affected by natural disasters or conflict. By resettling refugees, we are not only breaking the law but also putting our own citizens at risk. The US has a responsibility to take in refugees who are fleeing violence and persecution. It is not only the right thing to do, but it is also the smart thing to do. By resettling refugees",
+      "2": "I oppose the reduction of refugees allowed to resettle the US. This policy is discriminatory and goes against our values as a country. The US is a nation of immigrants and has historically welcomed those fleeing persecution and oppression. Reducing the number of refugees allowed to resettle the US would be a step backward in our efforts to promote human rights and democracy around the world. By limiting the number of refugees allowed to resettle the US, we would be excluding vulnerable populations from accessing basic necessities such as healthcare, education, and job opportunities. This would negatively impact the lives of those who have already experienced significant hardships",
+      "3": "\"I oppose the reduction of refugee resettlement because it will cause unnecessary hardship for the individuals and families who are currently seeking refuge. By reducing the number of refugees allowed to resettle, we risk creating an atmosphere of fear and mistrust, which will hinder the resettlement process and ultimately hinder our ability to provide aid and support to those in need.\""
+    },
+    "rankings": {
+      "0": 9,
+      "1": 6,
+      "2": 5,
+      "3": 5
+    }
+  }
+}
