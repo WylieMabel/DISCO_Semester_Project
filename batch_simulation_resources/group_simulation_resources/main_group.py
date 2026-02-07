@@ -1,10 +1,5 @@
-"""
-Main simulation script for multi-agent discussion.
-This script runs the simulation for all agents and all questions.
-"""
-
 import json
-from agent_methods import (
+from agent_methods_final import (
     initialize_llm,
     generate_argument_prompt,
     update_post_opinions_prompt,
@@ -12,9 +7,10 @@ from agent_methods import (
     call_llm_final,
     survey_dict
 )
+import argparse
 
 
-def load_participants(filepath='participant_attitudes.json'):
+def load_participants(filepath='phase3_attitudes.json'):
     """
     Load participant data from JSON file.
 
@@ -41,10 +37,10 @@ def run_discussion(participants, question, groupnumber=1):
     Returns:
         Tuple of (agent_arguments dict, final_rankings dict)
     """
-    print(f"\n{'='*80}")
+    #print(f"\n{'='*80}")
     print(f"DISCUSSION ON QUESTION: {question}")
-    print(f"Question Text: {survey_dict[question]}")
-    print(f"{'='*80}\n")
+    #print(f"Question Text: {survey_dict[question]}")
+    #print(f"{'='*80}\n")
 
     # Select the first num_agents participants
     # filter the participants json to only include those with group number equal to groupnumber
@@ -53,7 +49,7 @@ def run_discussion(participants, question, groupnumber=1):
     selected_agents = filtered_agents
 
     # Generate arguments for each agent
-    print(f"--- GENERATING ARGUMENTS ---\n")
+    #print(f"--- GENERATING ARGUMENTS ---\n")
     agent_arguments = {}
 
     for agent in selected_agents:
@@ -63,12 +59,12 @@ def run_discussion(participants, question, groupnumber=1):
         agent_arguments[agent['id']] = argument
 
         original_opinion = agent['questions'][question]
-        print(f"Participant {agent['id']}:")
-        print(f"  Original opinion: {original_opinion}")
-        print(f"  Argument: {argument}\n")
+        #print(f"Participant {agent['id']}:")
+        #print(f"  Original opinion: {original_opinion}")
+        #print(f"  Argument: {argument}\n")
 
     # Update opinions based on discussion
-    print(f"\n--- UPDATING POST-DISCUSSION OPINIONS ---\n")
+    #print(f"\n--- UPDATING POST-DISCUSSION OPINIONS ---\n")
     final_rankings = {}
 
     for agent in selected_agents:
@@ -90,14 +86,14 @@ def run_discussion(participants, question, groupnumber=1):
 
         original_opinion = agent['questions'][question]
 
-        if final_ranking is not None:
-            print(f"Participant {agent['id']}:")
-            print(f"  Original opinion: {original_opinion}")
-            print(f"  Updated rating: {final_ranking}\n")
-        else:
-            print(f"Participant {agent['id']}:")
-            print(f"  Original opinion: {original_opinion}")
-            print(f"  Updated rating: FAILED TO GET VALID RESPONSE\n")
+        #if final_ranking is not None:
+            #print(f"Participant {agent['id']}:")
+            #print(f"  Original opinion: {original_opinion}")
+            #print(f"  Updated rating: {final_ranking}\n")
+        #else:
+            #print(f"Participant {agent['id']}:")
+            #print(f"  Original opinion: {original_opinion}")
+            #print(f"  Updated rating: FAILED TO GET VALID RESPONSE\n")
 
     return agent_arguments, final_rankings
 
@@ -105,14 +101,24 @@ def run_discussion(participants, question, groupnumber=1):
 def main():
     """
     Main function to run the multi-agent simulation.
+    Adapted for Slurm Array Parallelism.
     """
+    # 1. SETUP ARGUMENT PARSER
+    parser = argparse.ArgumentParser(description="Run Multi-Agent Simulation")
+    parser.add_argument("--start_group", type=int, default=1, help="Group number to start with")
+    parser.add_argument("--end_group", type=int, default=1, help="Group number to end with (inclusive)")
+    parser.add_argument("--temp", type=float, default=0.3, help="Temp param for LLM")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
+    args = parser.parse_args()
+
     print("\n" + "="*80)
-    print("MULTI-AGENT DISCUSSION SIMULATION")
+    print(f"MULTI-AGENT DISCUSSION SIMULATION")
+    print(f"Groups: {args.start_group}-{args.end_group} | Seed: {args.seed} | Temp: {args.temp}")
     print("="*80 + "\n")
 
     # Initialize LLM
     print("Initializing LLM...")
-    initialize_llm()
+    initialize_llm(seed=args.seed, temp=args.temp)
 
     # Load participants
     print("\nLoading participant data...")
@@ -120,41 +126,45 @@ def main():
     print(f"Loaded {len(participants)} participants\n")
 
     questions = survey_dict.keys()
+    questions_to_discuss = ["Q3F"]
 
-    # Define questions to discuss
-    # You can modify this list to include all questions you want to simulate
-    questions_to_discuss = questions  # Add more questions as needed: ["Q2A", "Q3", "Q4", ...]
-
-    # Run discussion for each question
     all_results = {}
 
-    for group in range(1,2):
+    # 2. LOOP THROUGH DYNAMIC RANGE
+    for group in range(args.start_group, args.end_group + 1):
         print(f"\n{'#'*80}")
         print(f"STARTING DISCUSSIONS FOR GROUP {group}")
         print(f"{'#'*80}\n")
 
         for question in questions_to_discuss:
-            agent_arguments, final_rankings = run_discussion(
-                participants, 
-                question, 
-                groupnumber=group
-            )
+            try:
+                agent_arguments, final_rankings = run_discussion(
+                    participants, 
+                    question, 
+                    groupnumber=group
+                )
 
-            all_results[f'Group_{group}_{question}'] = {
-                'arguments': agent_arguments,
-                'rankings': final_rankings
-            }
+                all_results[f'Group_{group}_{question}'] = {
+                    'arguments': agent_arguments,
+                    'rankings': final_rankings
+                }
+            except Exception as e:
+                print(f"⚠️ ERROR in Group {group}, Question {question}: {e}")
+                # Continue to next question/group rather than crashing entirely
 
-    # Save results to JSON file
+    # 3. SAVE TO UNIQUE FILE NAME
+    temperature_string = str(args.temp).replace('.', '_')
+    output_filename = f'phase_3/sim_results_G{args.start_group}-{args.end_group}_T{temperature_string}_S{args.seed}.json'
+
     print(f"\n{'='*80}")
-    print("SAVING RESULTS")
+    print(f"SAVING RESULTS TO {output_filename}")
     print(f"{'='*80}\n")
 
-    with open('simulation_results_prelim.json', 'w') as f:
+    with open(output_filename, 'w') as f:
         json.dump(all_results, f, indent=2)
 
-    print("✅ Results saved to simulation_results.json")
-    print("\n🎉 Simulation complete!\n")
+    print(f"✅ Results saved to {output_filename}")
+    print("\n🎉 Simulation complete for this batch!\n")
 
 
 if __name__ == "__main__":

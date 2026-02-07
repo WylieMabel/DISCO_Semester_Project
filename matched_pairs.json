@@ -1,0 +1,1242 @@
+[
+    {
+        "id": 348,
+        "group": 0,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 7
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 273,
+        "group": 1,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 7
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 68,
+        "group": 0,
+        "demographics": {
+            "RACE": "Black, non-Hispanic",
+            "AGEBRACKET": "45-59",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Democrat",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 217,
+        "group": 1,
+        "demographics": {
+            "RACE": "Black, non-Hispanic",
+            "AGEBRACKET": "45-59",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Democrat",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 123,
+        "group": 0,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "18-29",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 374,
+        "group": 1,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "18-29",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 481,
+        "group": 0,
+        "demographics": {
+            "RACE": "Asian, non-Hispanic",
+            "AGEBRACKET": "18-29",
+            "EDUCATION": "HS graduate or equivalent",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 1
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 281,
+        "group": 1,
+        "demographics": {
+            "RACE": "Asian, non-Hispanic",
+            "AGEBRACKET": "18-29",
+            "EDUCATION": "HS graduate or equivalent",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 311,
+        "group": 0,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "45-59",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 3
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 400,
+        "group": 1,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "45-59",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 3
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 330,
+        "group": 0,
+        "demographics": {
+            "RACE": "Black, non-Hispanic",
+            "AGEBRACKET": "30-44",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 355,
+        "group": 1,
+        "demographics": {
+            "RACE": "Black, non-Hispanic",
+            "AGEBRACKET": "30-44",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 29,
+        "group": 0,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 9
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 422,
+        "group": 1,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 9
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 176,
+        "group": 0,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 10
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 128,
+        "group": 1,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 10
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 398,
+        "group": 0,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "30-44",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 7
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 406,
+        "group": 1,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "30-44",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 6
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 487,
+        "group": 0,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 2
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 63,
+        "group": 1,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 2
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 348,
+        "group": 2,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 7
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 273,
+        "group": 3,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 7
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 68,
+        "group": 3,
+        "demographics": {
+            "RACE": "Black, non-Hispanic",
+            "AGEBRACKET": "45-59",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Democrat",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 217,
+        "group": 2,
+        "demographics": {
+            "RACE": "Black, non-Hispanic",
+            "AGEBRACKET": "45-59",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Democrat",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 123,
+        "group": 2,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "18-29",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 374,
+        "group": 3,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "18-29",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 481,
+        "group": 3,
+        "demographics": {
+            "RACE": "Asian, non-Hispanic",
+            "AGEBRACKET": "18-29",
+            "EDUCATION": "HS graduate or equivalent",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 1
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 281,
+        "group": 2,
+        "demographics": {
+            "RACE": "Asian, non-Hispanic",
+            "AGEBRACKET": "18-29",
+            "EDUCATION": "HS graduate or equivalent",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 311,
+        "group": 2,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "45-59",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 3
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 400,
+        "group": 3,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "45-59",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 3
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 330,
+        "group": 3,
+        "demographics": {
+            "RACE": "Black, non-Hispanic",
+            "AGEBRACKET": "30-44",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 355,
+        "group": 2,
+        "demographics": {
+            "RACE": "Black, non-Hispanic",
+            "AGEBRACKET": "30-44",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 0
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 29,
+        "group": 2,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 9
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 422,
+        "group": 3,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 9
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 176,
+        "group": 3,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 10
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 128,
+        "group": 2,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "BA or above",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 10
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 398,
+        "group": 2,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "30-44",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 7
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 406,
+        "group": 3,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "30-44",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Republican",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 6
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 487,
+        "group": 3,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Female",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 2
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    },
+    {
+        "id": 63,
+        "group": 2,
+        "demographics": {
+            "RACE": "White, non-Hispanic",
+            "AGEBRACKET": "60+",
+            "EDUCATION": "Some college",
+            "PARTYBEFORE": "Independent",
+            "GENDER": "Male",
+            "AGE": 20
+        },
+        "questions": {
+            "Q3F": 2
+        },
+        "attitudes": {
+            "Democracy System Approval": "In the middle",
+            "Restrictive Immigration Attitude": "Extremely oppose",
+            "Immigration Policy Attitude": "In the middle",
+            "Immigration Support Attitude": "Extremely oppose",
+            "Pro-Climate Regulation Attitude": "Strongly favor",
+            "Climate Policy Attitude": "In the middle",
+            "Pro-Fossil Fuel Attitude": "In the middle",
+            "Tax Policy Attitude": "Extremely oppose",
+            "Progressive Tax/Support Attitude": "Extremely oppose",
+            "Tax Reduction/Conservative Attitude": "Strongly favor",
+            "Healthcare System Reform Attitude": "Extremely oppose",
+            "Healthcare Expansion Attitude": "Strongly favor",
+            "Healthcare Policy Attitude": "Extremely oppose",
+            "Global Politics Attitude": "Extremely oppose"
+        }
+    }
+]

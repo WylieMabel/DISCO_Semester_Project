@@ -5,24 +5,23 @@
 #---------------------------------------
 
 #SBATCH --job-name=LLM_MultiAgent_Sim
-#SBATCH --output=LLM_MultiAgent_Sim_%j.out
-#SBATCH --error=LLM_MultiAgent_Sim_%j.err
+#SBATCH --output=logs/LLM_MultiAgent_Sim_%j_%a.out
+#SBATCH --error=logs/LLM_MultiAgent_Sim_%j_%a.err
 #SBATCH --nodes=1
 # The nodes must be available.
 #SBATCH --nodelist=tikgpu[06,07,09]
 #SBATCH --mem=25G
 #SBATCH --gres=gpu:1
 #SBATCH --export=ALL
+#SBATCH --array=0-3
 
-# Set a time limit for the job (e.g., 2 hours)
-#SBATCH --time=02:00:00
+# Set a time limit for the job
+#SBATCH --time=24:00:00
 
 #---------------------------------------
 # JOB COMMANDS
 #---------------------------------------
 
-echo "Starting job on node: $(hostname)"
-echo "SLURM Job ID: $SLURM_JOB_ID"
 cd $RDS_DIR
 echo "Job running in directory: $(pwd)"
 
@@ -33,6 +32,22 @@ echo "========================================"
 echo "Multi-Agent Discussion Simulation"
 echo "========================================"
 echo ""
+
+GROUPS_PER_JOB=10
+OFFSET=1  # Groups start at 1, not 0
+
+# Calculate start: (ArrayID * 10) + 1
+START_GROUP=$(( ($SLURM_ARRAY_TASK_ID * $GROUPS_PER_JOB) + $OFFSET ))
+
+# Calculate end: (ArrayID + 1) * 10
+END_GROUP=$(( ($SLURM_ARRAY_TASK_ID + 1) * $GROUPS_PER_JOB ))
+
+TEMPERATURE=$(echo "scale=1; $SLURM_ARRAY_TASK_ID * 0.4" | bc)
+
+echo "Job ID: $SLURM_ARRAY_JOB_ID, Array ID: $SLURM_ARRAY_TASK_ID"
+echo "Running on node: $(hostname)"
+echo "Processing Groups: $START_GROUP to $END_GROUP"
+echo "Temperature: $TEMPERATURE"
 
 # Check if Python is installed
 if ! command -v python3 &> /dev/null
@@ -80,7 +95,12 @@ conda activate RDS
 # Run the simulation
 echo "Starting simulation..."
 echo ""
-python3 main.py
+python main.py \
+   # --start_group $START_GROUP \
+   --start_group 1 \
+   --end_group 10 \
+   --temp "$TEMPERATURE"
+# --end_group $END_GROUP 
 
 # Check exit status
 if [ $? -eq 0 ]; then

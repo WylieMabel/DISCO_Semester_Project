@@ -27,6 +27,9 @@ sampling_params_final = SamplingParams(
     top_p=0.9
 )
 
+# Add a global tokenizer variable
+tokenizer = None
+
 
 # ============================================================================
 # DICTIONARIES
@@ -67,7 +70,7 @@ race_map_text = {
 }
 
 education_map_text = {
-    "No HS Diploma": "You have not completed a high school diploma. ",
+    "No HS diploma": "You have not completed a high school diploma. ",
     "Some college": "You have attended some level of college but have not completed a bachelor's degree. ",
     "HS graduate or equivalent": "You have completed a high school diploma. ",
     "BA or above": "You have completed a bachelor's degree or higher. "
@@ -117,12 +120,12 @@ MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct"
 # Global generator variable (initialized when needed)
 llm = None
 
-def initialize_llm():
+def initialize_llm(temp=0, seed=42):
     """
     Initialize the LLM generator pipeline, selecting a GPU-optimized Llama 3 model if CUDA is available,
     otherwise falling back to TinyLlama on CPU.
     """
-    global llm
+    global llm, tokenizer, sampling_params_final, sampling_params_initial
 
     print("Starting vLLM Engine on 1 GPU (TP=1)...")
     llm = LLM(
@@ -132,7 +135,29 @@ def initialize_llm():
         max_model_len=4096,
         gpu_memory_utilization=0.85
     )
+
+    # Initialize the tokenizer from the LLM engine
+    tokenizer = llm.get_tokenizer()
     
+    print("✅ Engine and Tokeniser initialized.")
+
+    random_seed = seed
+
+    sampling_params_initial = SamplingParams(
+        max_tokens=200,
+        temperature=temp,
+        top_p=0.9,
+        seed=random_seed,
+        stop=["\n\nNote:"]
+    )
+    sampling_params_final = SamplingParams(
+        max_tokens=50,
+        temperature=temp,
+        top_p=0.9,
+        seed=random_seed
+    )
+   
+    print(f"Temperature set to {str(temp)}")
     print("✅ Engine initialized.")
     print(f"✅ Model loaded successfully :) (Torch version: {torch.__version__})")
     return llm
@@ -202,46 +227,20 @@ def get_opinion_description(response_value):
 
     return response_value, description
 
-
 def generate_argument_prompt(json_object, question):
-    """
-    Generate a prompt for the agent to create an argument on a question.
-    Includes the original opinion prominently to ensure arguments reflect actual stance.
-
-    Args:
-        json_object: Participant JSON object
-        question: Question ID
-
-    Returns:
-        Formatted prompt string
-    """
     question_text = survey_dict[question]
     response_value = json_object["questions"][question]
-    opinions = initial_opinions(json_object['questions'])
     personal_details = demographic_info(json_object['demographics'])
-
-    # Get opinion description with mapping
+    
+    # Get opinion description
     opinion_num, opinion_description = get_opinion_description(response_value)
 
-    # Clarify what the opinion scale means
-    if opinion_num < 5:
-        stance_meaning = "you OPPOSE/DISAGREE with this policy"
-    elif opinion_num == 5:
-        stance_meaning = "you are NEUTRAL on this policy"
-    else:
-        stance_meaning = "you FAVOR/AGREE WITH this policy"
-
-    prompt = (
-        f"You are a participant in a discussion group on US policies.\n\n"
-        f"YOUR DEMOGRAPHIC INFORMATION:\n"
-        f"{personal_details}\n\n"
-        #f"YOUR OVERALL OPINIONS ON VARIOUS POLICIES:\n"
-        #f"{opinions}\n"
-        f"SPECIFIC QUESTION FOR THIS DISCUSSION:\n"
-        f"\"{question_text}\"\n\n"
-        f"YOUR POSITION ON THIS SPECIFIC QUESTION:\n"
-        f"Opinion Score: {opinion_num}\n"
-        f"SCALE:\n"
+    # 1. SYSTEM PROMPT: Persona, Demographics, and Scale Definition
+    system_content = (
+        f"You are one of roughly 500 Americans scientifically selected to represent the entire country on September 19-22 2019.\n"
+        f"You will join your fellow Americans in discussing the issues confronting the US.\n"
+        f"YOUR DEMOGRAPHIC INFORMATION:\n{personal_details}\n"
+        f"LIKERT SCALE:\n"
         f"0 = Extremely oppose\n"
         f"1 = Very strongly oppose\n"
         f"2 = Strongly oppose\n"
@@ -252,62 +251,41 @@ def generate_argument_prompt(json_object, question):
         f"7 = Moderately favor\n"
         f"8 = Strongly favor\n"
         f"9 = Very strongly favor\n"
-        f"10 = Extremely favor\n\n"
-        f"77 = No opinion\n"
-        f"98 = SKIPPED ON WEB\n"
-        f"99 = REFUSED\n\n"
-        f"TASK:\n"
-        f"Restate your opinion using your Likert Scale Answer then write a BRIEF argument (MAX 3 sentences) that clearly explains WHY you hold this position. "
-        f"Your argument MUST be consistent with your score of {opinion_num} ({opinion_description}). Make your argument authentic and directly relate it to your position."
+        f"10 = Extremely favor\n"
+        f"77: No opinion, 98: Skipped, 99: Refused"
+    )
+
+    # 2. USER PROMPT: Specific Task and Input Data
+    user_content = (
+        f"DISCUSSION QUESTION: \"{question_text}\"\n"
+        f"YOUR POSITION: {opinion_num} ({opinion_description})\n"
+        f"TASK: Restate your opinion using your Likert Scale Answer then write a BRIEF argument (MAX 3 sentences)"
+        f"that clearly explains WHY you hold this position based on your demographics and score.\n\n"
         f"YOUR ARGUMENT:"
     )
-    #print(prompt)
-    return prompt
+
+    # Return the list of messages
+    messages = [
+        {"role": "system", "content": system_content},
+        {"role": "user", "content": user_content}
+    ]
+    return messages
 
 
 def update_post_opinions_prompt(json_object, self_response, agent_responses, question):
-    """
-    Generate a prompt for the agent to update their opinion after discussion.
-
-    Args:
-        json_object: Participant JSON object
-        self_response: The agent's own argument
-        agent_responses: List of other agents' arguments
-        question: Question ID
-
-    Returns:
-        Formatted prompt string
-    """
-    opinions = initial_opinions(json_object['questions'])
     personal_details = demographic_info(json_object['demographics'])
     question_text = survey_dict[question]
     response_value = json_object["questions"][question]
-
-    # Get original opinion description
     opinion_num, opinion_description = get_opinion_description(response_value)
 
     formatted_agent_responses = "\n".join([f"{i+1}. {a}" for i, a in enumerate(agent_responses)])
 
-    prompt = (
-        f"You are a participant in a discussion group on US policies.\n\n"
-        f"YOUR DEMOGRAPHIC INFORMATION:\n"
-        f"{personal_details}\n\n"
-        #f"YOUR ORIGINAL OPINIONS:\n"
-        #f"{opinions}\n"
-        f"DISCUSSION QUESTION:\n"
-        f"\"{question_text}\"\n\n"
-        f"YOUR ORIGINAL POSITION:\n"
-        f"Opinion Score: {opinion_num}\n"
-        f"Meaning: {opinion_description}\n\n"
-        f"YOUR ARGUMENT IN THE DISCUSSION:\n"
-        f"{self_response}\n\n"
-        f"OTHER PARTICIPANTS' ARGUMENTS:\n"
-        f"{formatted_agent_responses}\n\n"
-        f"TASK:\n"
-        f"After hearing these arguments, decide if your opinion has changed. You may keep your original score, "
-        f"move slightly in either direction, or change significantly if the arguments strongly persuaded you. "
-        f"Consider whether the other participants made compelling points.\n\n"
-        f"SCALE:\n"
+    # 1. SYSTEM PROMPT
+    system_content = (
+        f"You are one of roughly 500 Americans scientifically selected to represent the entire country on September 19-22 2019.\n"
+        f"You will join your fellow Americans in discussing the issues confronting the US.\n"
+        f"YOUR DEMOGRAPHIC INFORMATION:\n{personal_details}\n"
+        f"LIKERT SCALE:\n"
         f"0 = Extremely oppose\n"
         f"1 = Very strongly oppose\n"
         f"2 = Strongly oppose\n"
@@ -318,33 +296,48 @@ def update_post_opinions_prompt(json_object, self_response, agent_responses, que
         f"7 = Moderately favor\n"
         f"8 = Strongly favor\n"
         f"9 = Very strongly favor\n"
-        f"10 = Extremely favor\n\n"
-        f"RESPOND WITH TWO SEPARATE PARTS:\n"
-        f"1.  **The final opinion score, clearly labeled.**\n"
-        f"2.  **A clear explanation for your final score.**\n\n"
-        f"Your response must start with the exact label **\"Updated Rating: X\"** (where X is your chosen opinion integer from 0 to 10), followed by a newline, and then your explanation.\n\n"
-        f"Updated Rating:"
+        f"10 = Extremely favor"
     )
-    return prompt
+
+    # 2. USER PROMPT
+    user_content = (
+        f"DISCUSSION QUESTION: \"{question_text}\"\n\n"
+        f"YOUR ORIGINAL POSITION: {opinion_num} ({opinion_description})\n"
+        f"YOUR ARGUMENT: {self_response}\n\n"
+        f"OTHER PARTICIPANTS' ARGUMENTS:\n{formatted_agent_responses}\n\n"
+        f"TASK: After hearing these arguments, decide if your opinion has changed. You may keep your original score, "
+        f"move slightly in either direction, or change significantly if the arguments strongly persuaded you."
+        f"Consider whether the other participants made compelling points.\n\n"
+        f"Respond with exactly two lines:\n"
+        f"1. Updated Rating: [Integer 0-10]\n"
+        f"2. A clear explanation."
+    )
+
+    messages = [
+        {"role": "system", "content": system_content},
+        {"role": "user", "content": user_content}
+    ]
+    return messages
 
 # ============================================================================
 # LLM CALLING FUNCTIONS
 # ============================================================================
 
-def call_llm_argument(prompt):
-    """
-    Call LLM to generate an argument based on the prompt.
-
-    Args:
-        prompt: The formatted prompt string
-
-    Returns:
-        Generated argument text
-    """
+def call_llm_argument(messages): # Argument is now 'messages', not 'prompt'
     if llm is None:
-        raise RuntimeError("LLM generator not initialized. Call initialize_llm() first.")
+        raise RuntimeError("LLM not initialized.")
 
-    generated_text = llm.generate(prompt, sampling_params_initial)[0].outputs[0].text.strip()
+    # Apply the Llama 3 Chat Template
+    # tokenize=False returns a string formatted with <|begin_of_text|>, <|user|>, etc.
+    # add_generation_prompt=True adds the final <|assistant|> tag to prompt the model to speak.
+    prompt_with_template = tokenizer.apply_chat_template(
+        messages, 
+        tokenize=False, 
+        add_generation_prompt=True
+    )
+
+    # Generate
+    generated_text = llm.generate(prompt_with_template, sampling_params_initial)[0].outputs[0].text.strip()
 
     try:
         # Extract text after "YOUR ARGUMENT:"
@@ -358,63 +351,77 @@ def call_llm_argument(prompt):
 
     return response
 
+    # (Optional) Clean up logic if the model repeats the prompt (usually vllm doesn't do this, but good to be safe)
+    return generated_text
 
-def extract_numeric_rating(text):
-    """
-    Extract a numeric rating from 0-10 from the LLM output.
 
-    Args:
-        text: The generated text from LLM
+def call_llm_final(messages, max_retries=5): # Argument is now 'messages'
+    if llm is None:
+        raise RuntimeError("LLM not initialized.")
 
-    Returns:
-        Integer rating (0-10) or None if no valid rating found
-    """
-    # Remove whitespace and extract potential numbers
-    text = text.strip()
-    print(text)
+    # Apply Template
+    prompt_with_template = tokenizer.apply_chat_template(
+        messages, 
+        tokenize=False, 
+        add_generation_prompt=True
+    )
 
-    # Try to find a number in the text
-    import re
-    numbers = re.findall(r'\d+', text)
+    for attempt in range(max_retries):
+        outputs = llm.generate(prompt_with_template, sampling_params_final)
+        generated_text = outputs[0].outputs[0].text.strip()
+        #print(f"LLM Output (Attempt {attempt + 1}): {generated_text}")
 
-    if numbers:
-        for num_str in numbers:
-            num = int(num_str)
-            if 0 <= num <= 10:
-                return num
+        # Extract numeric rating
+        # how does this work with temperature 0?
+        rating = extract_numeric_rating(generated_text) # Simplified extraction for this example
+
+        if rating is not None:
+            return rating
+        
+        print(f"⚠️ Invalid response: {generated_text}")
 
     return None
 
 
-def call_llm_final(prompt, max_retries=5):
+def extract_numeric_rating(text):
     """
-    Call LLM to generate final updated opinion based on the prompt.
-    Validates that the response is a number between 0-10.
+    Extract a numeric rating from the 'Updated Rating' line (0–10),
+    robust to non-string inputs.
 
     Args:
-        prompt: The formatted prompt string
-        max_retries: Maximum number of retries to get valid response
+        text: The generated text from LLM (string, list, etc.)
 
     Returns:
-        Integer rating (0-10) or None if unable to get valid response
+        Integer rating (0–10) or None if no valid rating found
     """
-    if llm is None:
-        raise RuntimeError("LLM generator not initialized. Call initialize_llm() first.")
+    import re
 
-    for attempt in range(max_retries):
-        generated_text = llm.generate(prompt, sampling_params_final)[0].outputs[0].text.strip()
+    # 1) Make sure we have a string; be robust to lists and others
+    if isinstance(text, list):
+        # Join list elements into a single string
+        text = "\n".join(str(x) for x in text)
+    elif not isinstance(text, str):
+        text = str(text)
 
-        print(generated_text)
+    text = text.strip()
+    if not text:
+        return None
 
-        # Extract numeric rating
-        rating = extract_numeric_rating(generated_text.split("Updated Rating")[-1])
+    # 2) Prefer the explicit "Updated Rating" pattern anywhere in the text
+    #    e.g. "1. Updated Rating: 7" or "Updated Rating: 10"
+    m = re.search(r"Updated Rating[^0-9]*([0-9]{1,2})", text, re.IGNORECASE)
+    if m:
+        num = int(m.group(1))
+        if 0 <= num <= 10:
+            return num
 
-        if rating is not None:
-            return rating
-
-        # If we got an invalid response, show debug info and retry
-        if attempt < max_retries - 1:
-            print(f"  ⚠️  Invalid response (attempt {attempt + 1}/{max_retries}): '{generated_text[:80]}'")
+    # 3) Fallback: look at the first line only (to avoid grabbing list numbers from later lines)
+    first_line = text.splitlines()[0]
+    nums = re.findall(r"\d+", first_line)
+    for num_str in nums:
+        num = int(num_str)
+        if 0 <= num <= 10:
+            return num
 
     return None
 

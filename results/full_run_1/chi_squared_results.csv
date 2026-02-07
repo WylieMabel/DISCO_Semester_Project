@@ -1,0 +1,49 @@
+Question,QuestionText,p_value,Significant
+Q1,How poorly or well would you say the system of democracy in the US works these days?,5.925049502324818e-09,True
+Q2A,[Reduce the number of refuges allowed to resettle the US.] How strongly would you oppose or favor these?,1.100529508694708e-33,True
+Q2B,[Increase personnel to process asylum seekers' claims faster.] How strongly would you oppose or favor these?,8.510516882672021e-65,True
+Q2C,[Provide aid to reduce poverty and violence in Central America.] How strongly would you oppose or favor these?,1.536053525249359e-19,True
+Q2D,[Increase the number of visas for skilled workers to move to the US.] How strongly would you oppose or favor these?,8.832183696519956e-29,True
+Q2E,"[Increase the number of visas for low-skilled workers to move to the US for industries that need them, like agriculture and service.] How strongly would you oppose or favor these?",4.160435665566019e-22,True
+Q2F,[Require employers to use the E-verify computer system to confirm workers' eligibility.] How strongly would you oppose or favor these?,3.545814855618533e-11,True
+Q2G,"[First-time violators of immigration laws should only be expelled, not subject to criminal punishment.] How strongly would you oppose or favor these?",0.0004153984344388248,True
+Q2H,"[Continue DACA, the Deferred Action for Childhood Arrivals program, which protects people who were brought to the US as children when their parents entered the country illegally.] How strongly would you oppose or favor these?",7.5558605933855145e-56,True
+Q2I,[Undocumented immigrants should be forced to return to their home countries before applying to legally come to the US to live and work permanently.] How strongly would you oppose or favor these?,7.245553790563605e-20,True
+Q3A,[The US should commit to the 2014 Paris Agreement to combat climate change.] How strongly would you oppose or favor these?,4.665682979987113e-58,True
+Q3B,[The US should go beyond the Paris Agreement and aim for more significant cutbacks on greenhouse gas emissions.] How strongly would you oppose or favor these?,5.632497406737831e-48,True
+Q3C,[The US should use taxes or other market incentives to achieve emissions reductions.] How strongly would you oppose or favor these?,2.1567724783353406e-27,True
+Q3D,[A Green New Deal to commit to major investments in infrastructure and renewable energy.] How strongly would you oppose or favor these?,1.9754357940005655e-50,True
+Q3E,[The US should expand oil and gas production.] How strongly would you oppose or favor these?,3.2164446257938915e-47,True
+Q3F,[Allow expansion of oil and gas production on federal lands previously dedicated to wildlife preservation.] How strongly would you oppose or favor these?,1.0295882760857045e-41,True
+Q3G,[The U.S. government should facilitate fracking throughout the US.] How strongly would you oppose or favor these?,2.3114054399292565e-18,True
+Q3H,"[The US should mandate zero carbon emissions for cars, trucks, and buses.] How strongly would you oppose or favor these?",6.276698290191568e-32,True
+Q4A,[Capital gains -- income earned when an investment that has increased in value is sold -- should be taxed the same as ordinary wage income.] How strongly would you oppose or favor these?,1.5194364188152035e-12,True
+Q4B,"[The US should impose a wealth tax on the richest taxpayers, requiring them to pay a small portion of their wealth on an annual basis.] How strongly would you oppose or favor these?",8.409767055920534e-22,True
+Q4C,"[The US should repeal the estate tax, which currently taxes deceased individuals worth at least $11 million and deceased couples worth at least $22 million.] How strongly would you oppose or favor these?",3.3220613842430833e-09,True
+Q4D,"[When taxpayers earn more than $2 million per year, they should pay a higher tax rate on additional income.] How strongly would you oppose or favor these?",1.491797488855334e-27,True
+Q4E,"[Expand the Earned Income Tax Credit, which provides a benefit to low-income workers, to more middle-class workers.] How strongly would you oppose or favor these?",5.023952698258948e-27,True
+Q4F,[Lower the corporate tax rate from 21% to 15%.] How strongly would you oppose or favor these?,9.022368373622303e-18,True
+Q4G,[Increase federal minimum wage from $7.25/hr. to $15/hr.] How strongly would you oppose or favor these?,3.899519115701116e-34,True
+Q4H,[The government should cover the cost of college tuition at public universities for all students who could not otherwise afford it.] How strongly would you oppose or favor these?,1.093918279198525e-36,True
+Q4I,[The government should fund a bond for each child born that will accumulate in value until the child turns 18 to then become usable for higher education or other essentials for a start in life.] How strongly would you oppose or favor these?,1.8521605645564584e-08,True
+Q4J,"[The government should give cash grants of $1,000/month to all adults at least eighteen-years-old.] How strongly would you oppose or favor these?",5.570255602510532e-39,True
+Q5A,[The Affordable Care Act should be repealed.] How strongly would you oppose or favor these?,4.525471242962194e-44,True
+Q5B,[Repeal the Affordable Care Act and replace with grants to state Governments to create their own systems.] How strongly would you oppose or favor these?,1.3040745149587766e-22,True
+Q5C,[The federal subsidies in the Affordable Care Act that help the poor should be increased.] How strongly would you oppose or favor these?,9.529406645014511e-35,True
+Q5D,[The federal subsidies in the Affordable Care Act that help the middle class should be expanded to include more people.] How strongly would you oppose or favor these?,2.4557398171573846e-27,True
+Q5E,[People should have reasonable access to health insurance without discrimination against pre-existing conditions.] How strongly would you oppose or favor these?,9.729805206325198e-39,True
+Q5F,"[Everybody should be able to buy a public plan like Medicare, the current plan for seniors over 65.] How strongly would you oppose or favor these?",2.1781923129946363e-15,True
+Q5G,"[People aged fifty-five and older should have the option of purchasing Medicare, instead of a private insurance plan.] How strongly would you oppose or favor these?",8.180198926547941e-21,True
+Q5H,[People should be automatically enrolled in a more generous version of Medicare.] How strongly would you oppose or favor these?,1.9114488630393463e-18,True
+Q5I,[Allow Medicare to negotiate drug prices.] How strongly would you oppose or favor these?,2.3094186769235855e-06,True
+Q5J,[The US government should make changes to the patent system to allow generic drugs to come on the market more quickly.] How strongly would you oppose or favor these?,9.208125778351267e-28,True
+Q6A,"[The US should rejoin the Trans-Pacific Partnership, a trading agreement between 12 countries excluding China.] How strongly would you oppose or favor these?",5.883598640275943e-23,True
+Q6B,[The U.S. should increase tariffs on Chinese goods.] How strongly would you oppose or favor these?,4.12296449813372e-20,True
+Q6C,[The US should tighten sanctions on Russia.] How strongly would you oppose or favor these?,9.491659343318205e-46,True
+Q6D,[The US should reaffirm its commitment to defend any NATO ally attacked by a hostile force.] How strongly would you oppose or favor these?,3.251826357776486e-66,True
+Q6E,[The US should enhance its military presence in the Asia Pacific to prevent aggression by China.] How strongly would you oppose or favor these?,2.6197991416084665e-12,True
+Q6F,[The US should recommit to the Iran Nuclear Agreement.] How strongly would you oppose or favor these?,1.471241822020594e-28,True
+Q6G,[Presidents should be required to obtain explicit congressional approval for sending US troops into combat situations.] How strongly would you oppose or favor these?,9.978799281536472e-36,True
+Q6H,[The U.S. should intervene abroad when it is necessary to prevent genocide.] How strongly would you oppose or favor these?,7.600013976986383e-32,True
+Q6I,[The U.S. should increase military spending by up to five percent per year for the next few years to meet rising global challenges and ensure readiness.] How strongly would you oppose or favor these?,1.2415790952487668e-27,True
+Q6J,[The US should use diplomacy and financial support to promote democracy and human rights throughout the world.] How strongly would you oppose or favor these?,1.5464572548662247e-24,True

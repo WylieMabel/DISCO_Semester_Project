@@ -57,7 +57,7 @@ After evaluating 4 datasets against 5 criteria (clear questions, participant tra
 - **Massive sample**: 3,842 participants (1,367 treatment, 2,475 control)
 - **Perfect tracking**: One row per participant, 0% attrition, pre/post in separate columns
 - **Rich demographics**: Gender, Age, Race/Ethnicity, Party ID, Education, Income (all 0% missing)
-- **50 matched question pairs**: Q1..Q50 (pre) → T2Q1..T2Q50 (post)
+- **50 matched question pairs**: Q1..Q50 (pre) → T2Q1..T2Q50 (post)§
 - **Experimental design**: Treatment group deliberated, control group did not
 - **Policy relevance**: Immigration, climate, healthcare, economy, foreign policy
 - **Published in top venue**: APSR with full methodology
